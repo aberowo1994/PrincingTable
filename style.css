@@ -1,0 +1,348 @@
+:root {
+  --header--color: #570373;
+  --main--color: #7905ff;
+  --container--color: #ededed;
+  --p--text: #868686;
+  --p--text2: #bffff0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,900;1,600;1,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: none; */
+  outline: none;
+  font-family: "Source Serif Pro", serif;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Source Serif Pro", serif;
+  padding: 5rem;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.section--1 h1 {
+  color: var(--header--color);
+  font-size: 40px;
+  font-weight: 900;
+  font-style: oblique;
+  text-align: center;
+}
+.section--1 h1::first-letter {
+  text-transform: uppercase;
+}
+
+.section--1 P {
+  color: var(--p--text);
+  font-weight: 600;
+  text-align: center;
+  font-size: 20;
+  line-height: 60px;
+  text-shadow: 0px 0px 0.5px #333;
+}
+
+.section--2 {
+  width: 1000px;
+  /* border: 3px solid red; */
+  margin: 1rem auto 0 auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: baseline;
+  align-items: flex-start;
+  padding: 4rem 0;
+}
+
+.section--2 .col--1 {
+  height: auto;
+  width: 100%;
+  /* border: 3px solid lightsalmon; */
+  background-color: var(--container--color);
+  border-radius: 10px;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.col--1 .monthly--yearly--container {
+  width: 100%;
+  /* border: 3px solid red; */
+  /* line-height: 50px; */
+}
+.monthly--yearly--container span {
+  padding: 0.5rem 1.5rem;
+  background-color: #fff;
+  border-radius: 100px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--header--color);
+  cursor: pointer;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.07);
+}
+.col--1 .features {
+  /* border: 3px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: baseline; */
+  gap: 2rem;
+  font-size: 18px;
+  color: var(--header--color);
+  font-weight: 600;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+
+/* styling the first 3 span */
+.features.monthly--features .feature:nth-child(-n + 3) span:last-child {
+  background-color: var(--main--color);
+  color: #fff;
+  border: none;
+}
+
+.features.yearly--features .feature:nth-child(1n) span:last-child {
+  background-color: var(--main--color);
+  color: #fff;
+  border: none;
+}
+
+.features.active {
+  display: none;
+  z-index: 10;
+}
+.features .feature {
+  /* border: 3px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 40px;
+}
+.features .feature span:last-child {
+  width: 25px;
+  height: 25px;
+  /* background-color: var(--main--color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 2px solid #333;
+  font-size: 14px;
+}
+.monthly--yearly--container span:first-child {
+  display: inline-block;
+  transform: translate(30px, 0);
+  background-color: var(--main--color);
+
+  color: #fff;
+}
+
+.monthly--yearly--container .yearlySpan {
+  padding-left: 3rem;
+}
+.section--2 .col--2 {
+  /* border: 3px solid tomato; */
+  width: 100%;
+}
+
+.section--2 .col--2 {
+  height: auto;
+  width: 100%;
+}
+
+/* .col--2 .col2Box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main--color);
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+}
+
+.col2Box .icon--bonus {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 1rem;
+}
+
+.icon--bonus .bonus span {
+  display: block;
+  line-height: 30px;
+}
+.icon--bonus > span {
+  background: var(--p--text2);
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.icon--bonus .bonus span:first-child {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: var(--p--text2);
+}
+.icon--bonus .bonus span:last-child {
+  color: var(--p--text2);
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0px 10px;
+  text-align: left;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+ 
+}
+
+.col2Box .direct--pricing span:first-child {
+  font-size: 50px;
+  color: var(--p--text2);
+}
+
+.direct--pricing sup {
+  color: #fbf9d9;
+} */
+
+.col--2 .col2Box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+  /* background-color: var(--main--color); */
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+
+.col2Box .icon--bonus {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 1rem;
+}
+
+.col2Box:not(.col2Box:nth-child(1)) {
+  margin-top: 2rem;
+}
+.icon--bonus .bonus span {
+  display: block;
+  line-height: 30px;
+}
+.icon--bonus > span {
+  height: 25px;
+  width: 25px;
+  border-radius: 100px;
+  text-align: center;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon--bonus .bonus span:first-child {
+  color: #000;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: var(--header--color);
+}
+.icon--bonus .bonus span:last-child {
+  background-color: rgba(0, 0, 0, 0.04);
+  font-size: 16px;
+  padding: 0px 10px;
+  text-align: left;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.col2Box .direct--pricing span:first-child {
+  font-size: 50px;
+  color: var(--header--color);
+  font-weight: 500;
+}
+.direct--pricing sup {
+  color: var(--p--text);
+}
+/* // base styling start here */
+/* .col--2 .base {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+} */
+/* .base .icon--bonus > span {
+  border: 2px solid #000;
+  background-color: transparent;
+}
+.base .bonus span:first-child {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: var(--header--color);
+}
+.icon--bonus .bonus span:last-child {
+  color: var(--header--color);
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 0px 10px;
+  text-align: left;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+} */
+
+.section--3 {
+  width: 100%;
+  border-top: 2px solid rgba(0, 0, 0, 0.08);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 1rem;
+}
+
+.switch--button {
+  height: 25px;
+  width: 55px;
+  border-radius: 100px;
+  background-color: #339b4d;
+}
+
+.switch--button span {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border-radius: 200px;
+  background-color: #fff;
+  transform: translate(2px, 1px);
+  box-shadow: outset 0px 0px 50px 0 rgba(0, 0, 0, 0.1);
+}
+.accept--prize {
+  flex-grow: 1;
+}
+.accept--prize span {
+  /* width:unset; */
+  display: block;
+  color: var(--header--color);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  /* border: 2px solid red; */
+}
+.accept--prize span:last-child {
+  color: var(--p--text);
+  font-size: 16px;
+}
+
+.section--3 .btn--plan a {
+  font-size: 18px;
+  text-decoration: none;
+  background-color: var(--main--color);
+  border-radius: 100px;
+  color: var(--p--text2);
+  padding: 10px 40px;
+  text-transform: capitalize;
+}
+
+/* The below classes are for javascripts */
+
